@@ -1,4 +1,7 @@
-# Brand logo files
+# Brand logo files (optional, NOT part of the repository)
+
+Logos are optional and unused by default (initials are shown). Trademarked logos must not be committed
+if the app is distributed through F-Droid. This file is kept only as a naming reference.
 
 Put 128×128 PNGs (transparent background) in `app/src/main/res/drawable-nodpi/`.
 Name = lowercase brand name; spaces and symbols become `_` (Android resource rules: a-z, 0-9, `_`).
