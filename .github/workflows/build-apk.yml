@@ -18,7 +18,8 @@ jobs:
           KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
         run: |
           if [ -n "$KEYSTORE_BASE64" ]; then
-            echo "$KEYSTORE_BASE64" | base64 -d > "$RUNNER_TEMP/phonedex.jks"
+            printf '%s' "$KEYSTORE_BASE64" | tr -d '[:space:]' | base64 -d > "$RUNNER_TEMP/phonedex.jks" \
+              || { echo "KEYSTORE_BASE64 is not valid base64: recreate the secret"; exit 1; }
             echo "KEYSTORE_PATH=$RUNNER_TEMP/phonedex.jks" >> "$GITHUB_ENV"
           else
             echo "No signing secrets: the APK will be unsigned."
