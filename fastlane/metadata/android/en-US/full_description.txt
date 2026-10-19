@@ -1,0 +1,15 @@
+PhoneDex is a private logbook for the smartphones you notice in real life: a Pixel on the train, a rare foldable in a café, an old Nokia in a shop window.
+
+Log a sighting in a few taps. The place is detected automatically (or typed by hand), the brand is picked from a searchable list of about 120 manufacturers (you can add your own), and the date and time are filled in for you.
+
+• Collection: browse by brand, then by model, with a counter showing how many times you spotted each one. Sort by most spotted, A–Z or most recent.
+• Model details: first and last sighting, plus the full history with date, time, place and notes.
+• History: every individual sighting, with search and filters by brand, model, date and place.
+• Map: your sightings on an OpenStreetMap map, grouped in clusters, with a shortcut to open each one.
+• Statistics: totals, top brands and models, sightings over time, breakdown by brand.
+• Achievements: 21 goals to unlock, with progress bars.
+• Light and dark themes, Material 3 design.
+
+Privacy: no account, no ads, no trackers, no Google services. Everything is stored on your device and never leaves it. Your position is read only when you add a sighting; the app never tracks you in the background.
+
+Network use: map tiles are downloaded from OpenStreetMap when you open the Map tab, and your device's geocoder may contact its provider to turn coordinates into an address. Everything else works offline.

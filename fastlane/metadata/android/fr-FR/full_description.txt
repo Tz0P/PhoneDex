@@ -1,0 +1,15 @@
+PhoneDex est un carnet privé pour les smartphones que vous remarquez dans la vraie vie : un Pixel dans le train, un pliable rare dans un café, un vieux Nokia dans une vitrine.
+
+Notez une observation en quelques appuis. Le lieu est détecté automatiquement (ou saisi à la main), la marque se choisit dans une liste d'environ 120 fabricants avec recherche (vous pouvez ajouter les vôtres), et la date et l'heure sont remplies pour vous.
+
+• Collection : parcourez par marque puis par modèle, avec un compteur du nombre de fois où vous avez vu chacun. Tri par nombre d'observations, A–Z ou plus récent.
+• Détail d'un modèle : première et dernière observation, et tout l'historique avec date, heure, lieu et notes.
+• Historique : toutes les observations, avec recherche et filtres par marque, modèle, date et lieu.
+• Carte : vos observations sur une carte OpenStreetMap, regroupées en clusters, avec un raccourci pour ouvrir chacune.
+• Statistiques : totaux, marques et modèles les plus vus, évolution dans le temps, répartition par marque.
+• Succès : 21 objectifs à débloquer, avec barres de progression.
+• Thèmes clair et sombre, design Material 3.
+
+Vie privée : pas de compte, pas de publicité, pas de traqueurs, pas de services Google. Tout est stocké sur votre appareil et n'en sort jamais. Votre position n'est lue que lorsque vous ajoutez une observation ; l'app ne vous suit jamais en arrière-plan.
+
+Utilisation du réseau : les tuiles de la carte sont téléchargées depuis OpenStreetMap quand vous ouvrez l'onglet Carte, et le géocodeur de votre appareil peut contacter son fournisseur pour convertir des coordonnées en adresse. Tout le reste fonctionne hors ligne.

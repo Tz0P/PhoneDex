@@ -5,19 +5,45 @@ plugins {
     id("com.google.devtools.ksp")
 }
 
+// Optional release signing. Only used when these variables exist (GitHub Actions);
+// without them the release build is simply unsigned, which is what F-Droid expects.
+val keystorePath: String? = System.getenv("KEYSTORE_PATH")
+
 android {
     namespace = "com.phonedex.app"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.phonedex.app"
+        applicationId = "io.github.tz0p.phonedex"
         minSdk = 26
         targetSdk = 35
         versionCode = 1
-        versionName = "1.0"
+        versionName = "1.0.0"
+    }
+    signingConfigs {
+        if (!keystorePath.isNullOrBlank()) {
+            create("release") {
+                storeFile = file(keystorePath)
+                storePassword = System.getenv("KEYSTORE_PASSWORD")
+                keyAlias = System.getenv("KEY_ALIAS")
+                keyPassword = System.getenv("KEY_PASSWORD")
+            }
+        }
     }
     buildTypes {
-        release { isMinifyEnabled = false }
+        release {
+            isMinifyEnabled = false
+            signingConfig = signingConfigs.findByName("release")
+        }
+    }
+    // No opaque dependency-metadata block in the APK (F-Droid requirement).
+    dependenciesInfo {
+        includeInApk = false
+        includeInBundle = false
+    }
+    lint {
+        checkReleaseBuilds = false
+        abortOnError = false
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
